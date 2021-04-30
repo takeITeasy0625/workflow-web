@@ -1,0 +1,50 @@
+/*背景色*/
+$workflow-background-color: #f7f7f7;
+
+$node-width: 260px;
+$node-min-height: 98px;
+$node-radius: 10px;
+
+$line-color: #dcdfe6;
+
+$blue-color: #3f9cfb;
+$title-color: #4b4b4b;
+
+.workflow-drawer {
+  /*头部标题*/
+  &-title-container {
+    background: $workflow-background-color;
+    padding: 20px 30px;
+
+    .title-info {
+      font-size: 18px;
+      font-weight: bold;
+      color: $title-color;
+      border-left: 4px solid #f17e35;
+      padding-left: 10px;
+    }
+  }
+
+  /*中间区域*/
+  &-middle-item-container {
+    height: calc(100vh - 110px);
+    padding: 30px 20px;
+    overflow-y: auto;
+  }
+
+  /*底部按钮容器*/
+  &-bottom-container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    height: 75px;
+    line-height: 75px;
+    padding-right: 33px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    z-index: 1;
+  }
+}
+
